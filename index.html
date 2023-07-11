@@ -1,0 +1,113 @@
+<div id="app"></div>
+<div id="app"></div>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Menú de Navegación</title>
+  <style>
+    /* Estilos para el menú de navegación */
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    /* Estilos para el contenido */
+    .content {
+      margin-top: 60px; /* Ajusta el margen superior para evitar que el contenido se superponga al menú */
+      padding: 20px;
+    }
+  </style>
+  <script>
+    function showContent(contentId) {
+      // Ocultar todos los contenidos
+      var contents = document.getElementsByClassName("content");
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+      }
+
+      // Mostrar el contenido seleccionado
+      var contentToShow = document.getElementById(contentId);
+      contentToShow.style.display = "block";
+    }
+  </script>
+</head>
+<body>
+  <!-- Menú de navegación -->
+  <ul>
+    <li><a href="#" onclick="showContent('content1')">Inicio</a></li>
+    <li><a href="#" onclick="showContent('content2')">Contexto del Problema</a></li>
+    <li><a href="#" onclick="showContent('content3')">Visualizaciones</a></li>
+    <li><a href="#" onclick="showContent('content4')" title="Para abrir el notebook desde Google Colab">Acceso al Notebook</a></li>
+  </ul>
+
+  <!-- Contenido de la página -->
+  <div id="content1" class="content">
+    <h2>Página 1</h2>
+    <p>Este es el contenido de la página 1.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logo_VIU.png" alt="Descripción de la imagen">
+  </div>
+
+  <div id="content2" class="content">
+    <h2>Página 2</h2>
+    <p>Este es el contenido de la página 2.</p>
+  </div>
+
+  <div id="content3" class="content">
+    <h2>Página 3</h2>
+    <p>Este es el contenido de la página 3.</p>
+  </div>
+
+  <div id="content4" class="content">
+    <h2>Notebook Python</h2>
+    <p>
+      En un notebook de Python desde Google Colab, tienes varias posibilidades para realizar análisis exploratorio de datos (EDA).
+      Algunas de las herramientas populares son:
+    </p>
+    <ul>
+      <li>Librerías de visualización como Matplotlib, Seaborn y Plotly para crear gráficas y visualizaciones interactivas.</li>
+      <li>Pandas para realizar manipulación y análisis de datos, como filtrar, agrupar y calcular estadísticas descriptivas.</li>
+      <li>Numpy para operaciones numéricas y manipulación de matrices.</li>
+      <li>Scikit-learn para implementar algoritmos de aprendizaje automático y realizar tareas como clasificación y regresión.</li>
+    </ul>
+    <p>
+      Con estas herramientas, puedes cargar y explorar tus datos, visualizar patrones, identificar relaciones, realizar análisis estadísticos
+      y crear modelos predictivos. El notebook de Python en Google Colab proporciona un entorno interactivo y colaborativo que te permite
+      escribir y ejecutar código en bloques, agregar explicaciones y visualizaciones, y compartir tus análisis con otros.
+    </p>
+    <p>
+      ¡Explora y experimenta con las diversas funcionalidades que ofrece un notebook Python en Google Colab para realizar un EDA efectivo y
+      obtener información valiosa de tus datos!
+    </p>
+    <a href="https://colab.research.google.com/drive/1hOH71Zri2FwGiTpj3Ng077JcFY___xQo?hl=es" target="_blank">
+      <button>Abrir Notebook en Google Colab</button>
+    </a>
+  </div>
+
+  <script>
+    // Mostrar la primera página por defecto al cargar la página
+    showContent("content1");
+  </script>
+</body>
+</html>
