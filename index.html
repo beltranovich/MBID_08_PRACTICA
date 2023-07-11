@@ -56,7 +56,7 @@
   <!--------- Menú de navegación --------->
   <ul>
     <li><a href="#" onclick="showContent('content1')" title="Pagina de Inicio con la entrega de la practica">Inicio</a></li>
-    <li><a href="#" onclick="showContent('content2')" title="Entendimiento del problema abordado en la practica">Contexto del Problema</a></li>
+    <li><a href="#" onclick="showContent('content2')" title="Entendimiento del problema abordado">Contexto del Problema</a></li>
     <li><a href="#" onclick="showContent('content3')" title="Análisis EDA y visualizaciones construidas ">Análisis EDA</a></li>
     <li><a href="#" onclick="showContent('content4')" title="Notebook Python desde Google Colab">Acceso al Notebook</a></li>
   </ul>
@@ -70,17 +70,17 @@
   <!--------------------------------------------------------------------------->
   <b>Nombre:</b><span> Beltrán Villamizar, Leonardo Antonio</span>
   </br>
-  <b>URL:</b><span>
+  <b>Proyecto Stackblitz:</b><span>
     <a href="https://js-d4byo7.stackblitz.io/" target="_blank">
     js-d4byo7.stackblitz.io
     </a></span>
   </br>
-  <b>Python (Google Colab):</b><span>
+  <b>Notebook Python (Google Colab):</b><span>
     <a href="https://colab.research.google.com/drive/1hOH71Zri2FwGiTpj3Ng077JcFY___xQo?hl=es#scrollTo=Zb19ztmPF-b5" target="_blank">
     colab.research.google.com/drive/1D1Jfkh2GWtbEbY1DIwN5TY3h6sdGTksP?usp=sharing
     </a></span>
   </br>
-  <b>GitHub:</b><span> 
+  <b>Repositorio GitHub:</b><span> 
     <a href="https://github.com/beltranovich/MBID_08_PRACTICA" target="_blank">
     github.com/beltranovich/MBID_08_PRACTICA
     </a></span>
@@ -89,6 +89,34 @@
     <a href="https://docs.google.com/spreadsheets/d/1glqTZqoE6zlxvTZY5UrLPcrc9W0FjIuD-yJJPyK4khA/" target="_blank">
     docs.google.com/spreadsheets/d/1glqTZqoE6zlxvTZY5UrLPcrc9W0FjIuD-yJJPyK4khA/
     </a></span>
+    <p>
+      <h2>INTRODUCCIÓN</h2>
+      La visualización de datos desempeña un papel crucial en el entorno de Big Data y Ciencia de Datos. Permite comprender y comunicar información compleja de manera clara y efectiva. Con la visualización, podemos identificar patrones, tendencias y relaciones ocultas en grandes conjuntos de datos. Además, simplifica la información y nos ayuda a tomar decisiones fundamentadas. En resumen, la visualización de datos potencia el análisis exploratorio, la generación de conocimientos y la toma de decisiones informadas en el entorno del Big Data.
+    </p>
+    <p>
+      <h2>OBJETIVO</h2>
+      El objetivo de este trabajo es realizar un análisis exploratorio de datos utilizando técnicas de visualización en Python y Google Sheets. A través de la creación de gráficos y visualizaciones, buscaremos identificar patrones, tendencias y relaciones en los datos, con el fin de obtener conocimientos y tomar decisiones informadas en base a la información visualizada.
+    </p>
+    <p>
+      <h2>DESARROLLO DE LA ACTIVIDAD</h2>
+      En la pestaña "Contexto del Problema", abordaremos la propuesta de análisis exploratorio de datos (EDA) centrada en el estudio de los accidentes en la ciudad de Nueva York a lo largo de los años. Con este análisis validaremos el objetivo de reducir los accidentes de tránsito a cero del Proyecto <b>Vision Zero</b>.</br></br>
+      En la pestaña "Análisis EDA", exploraremos la evolución de los accidentes, identificaremos patrones y tendencias, y examinaremos los resultados en el contexto del proyecto Vision Zero. A través de visualizaciones y análisis detallados, obtendremos información valiosa para comprender y mejorar la seguridad vial en la ciudad. En esta pestaña se contendrá la parte analitica del trabajo la cual va ser respaldada con la opción de visualizar el notebook python de google colab y el acceso a la hoja de calculo de google sheets</br></br>
+      Finalmente, la pestaña "Acceso al Notebook" permitirá navegar hacia el notebook de python donde se podrá validar la construcción del EDA
+    </p>
+    <p>
+      <h2>CONCLUSIONES</h2>
+      - En conclusión, durante el desarrollo de este proyecto, hemos destacado la importancia de utilizar herramientas como StackBlitz, que nos proporciona un entorno de desarrollo colaborativo en línea. Gracias a esta plataforma, hemos podido trabajar de manera eficiente y compartir nuestro código de forma sencilla.</br></br>
+      - Asimismo, hemos utilizado notebooks de Python en Google Colab, para realizar el análisis exploratorio de datos (EDA). Este notebook nos ha permitido ejecutar código de manera interactiva, documentar nuestras acciones y visualizar los resultados de manera clara y concisa.</br></br> 
+      - Además, hemos experimentado con la exportación e importación de gráficas generadas en diferentes herramientas. Hemos podido convertir nuestras visualizaciones en código HTML, lo que nos ha brindado flexibilidad para integrarlas en otros contextos, como en un proyecto de StackBlitz o en un sitio web.</br></br>
+      - Por último, hemos alojado nuestro proyecto en un repositorio de GitHub, lo que nos ha proporcionado una plataforma para gestionar y compartir nuestro código de manera efectiva. Esto nos ha permitido publicar el trabajo, realizar un seguimiento de las versiones y mantener un historial de nuestros avances. En conjunto, estas herramientas y enfoques nos han brindado una experiencia completa y efectiva para realizar el análisis exploratorio de datos, visualizar nuestros resultados y compartir nuestro proyecto de manera profesional y accesible.
+    </p>
+    <p>
+      <h2>HERRAMIENTAS UTILIZADAS</h2>
+      1. Notebook Python en Google Colab</br>
+      2. Hoja de Calculo de Google Sheets</br>
+      3. Stackblitz como contenedor del proyecto</br></br>
+      Se construyeron gráficas tanto en Python (que luego se importaron como un fichero .png), como en Google Sheets con el proceso de exportación embebida. Adicionalmente se realizó un proceso de <b>webscrapping</b> desde la hoja de calculo de google para construir una grafica de barras horizontales. Finalmente se construyó una grafica interactiva con la libreria folium en el notebook de Python para visualizar datos georeferenciados
+    </p>
   </div>
   <!--------------------------- Contenido de la página 2 --------------------------->
   <div id="content2" class="content">
@@ -99,22 +127,14 @@
     <h2>Proyecto Vision Zero: Reducción de accidentes de tránsito en la ciudad de Nueva York</h2>
     <p>
       El Proyecto Vision Zero es una iniciativa implementada por la ciudad de Nueva York con el objetivo de reducir los accidentes de tránsito a cero y crear calles más seguras para todos los residentes y visitantes. Esta iniciativa se basa en la premisa de que ningún número de muertes o lesiones por accidentes de tránsito es aceptable y que todos los accidentes son prevenibles.
+    </br></br>
+    El proyecto fue lanzado en 2014 y ha sido una prioridad para la ciudad desde entonces. Se basa en un enfoque integral que combina mejoras en la infraestructura vial, educación vial, cumplimiento de las leyes de tránsito y aplicación efectiva de sanciones.
+    </br></br>
+    En nuestro análisis, utilizaremos los datos recopilados por la ciudad de Nueva York y sus cinco distritos sobre los accidentes de tránsito desde 2013 hasta 2023. Estos datos nos permitirán evaluar el progreso del proyecto Vision Zero hasta la fecha y analizar las tendencias y patrones de los accidentes en la ciudad.
+    </br></br>
+    Puedes acceder al proyecto Vision Zero de la ciudad de Nueva York a través del siguiente enlace:
+    <a href="https://www.nyc.gov/content/visionzero/pages/"><strong>Proyecto Vision Zero NYC</strong></a>
     </p>
-    
-
-
-
-El proyecto fue lanzado en 2014 y ha sido una prioridad para la ciudad desde entonces. Se basa en un enfoque integral que combina mejoras en la infraestructura vial, educación vial, cumplimiento de las leyes de tránsito y aplicación efectiva de sanciones.
-
-Los resultados obtenidos hasta la fecha han sido alentadores. Desde el inicio del proyecto, se ha observado una disminución significativa en el número de accidentes de tránsito, lesiones graves y muertes relacionadas con el tráfico en la ciudad de Nueva York. Esto demuestra el impacto positivo que puede tener una estrategia enfocada en la seguridad vial.
-
-En nuestro análisis, utilizaremos los datos recopilados por la ciudad de Nueva York sobre los accidentes de tránsito desde enero de 2018 hasta agosto de 2019. Estos datos nos permitirán evaluar el progreso del proyecto Vision Zero hasta esa fecha y analizar las tendencias y patrones de los accidentes en la ciudad.
-
-A través de técnicas de visualización de datos y análisis exploratorio, buscaremos identificar áreas clave donde se requieran intervenciones adicionales, evaluar el impacto de las medidas implementadas hasta el momento y brindar información relevante para la toma de decisiones en materia de seguridad vial.
-
-Puedes acceder al proyecto Vision Zero de la ciudad de Nueva York a través del siguiente enlace:
-
-Proyecto Vision Zero NYC
   </div>
   <!--------------------------- Contenido de la página 3 --------------------------->
   <div id="content3" class="content">
@@ -127,7 +147,7 @@ Proyecto Vision Zero NYC
       Nuestro objetivo principal en este proyecto es identificar patrones en los accidentes de tránsito, comprender cómo han variado a lo largo del tiempo, analizar la distribución de accidentes según la hora del día y el día de la semana, investigar las causas más comunes de los accidentes y explorar las diferencias entre los distritos de la ciudad.</br></br>
       Con estas herramientas y enfoques analíticos, estaremos en condiciones de obtener información valiosa que nos permitirá tomar decisiones informadas y proponer medidas de prevención para mejorar la seguridad vial en la ciudad de Nueva York.</br>
     </p>
-    <h3>Descripción del Set de Datos</h3>
+    <h3>1. Descripción del Set de Datos</h3>
     <p>
       Se carga una tabla gráfica del archivo de Google Spreadsheet que muestra el nombre y la descripción de las columnas del dataset.
     </p>
@@ -139,7 +159,12 @@ Proyecto Vision Zero NYC
     </p>
     <!----------------------- Separador de Grafica y Analisis ----------------------->
     <h3>Total de Accidentes a Través del Tiempo</h3>
+    <p>
+      En esta sección, exploraremos la evolución del total de accidentes a través del tiempo en Nueva York. Analizando el dataset y examinando cómo ha variado la cantidad de accidentes a través de los años podremos saber sí el proyecto Vision Zero, el cual busca reducir los accidentes de tránsito a cero, ha funcionado o no.</br></br> 
+      Mediante la primer visualización podremos identificar la tendencias a reducción de la ocurrencia de accidentes.
+    </p>
     <img src="https://drive.google.com/uc?id=1deYearDPo99PZtHOXpVTDcGrfa2wsFmw" alt="Plot1">
+
     <!----------------------- Separador de Grafica y Analisis ----------------------->
     <h3>Accidentes por Hora del Día</h3>
     <img src="https://drive.google.com/uc?id=10nEgTX04wDlygpZVfmAxr2EX7ABt-uap" alt="Plot2">
