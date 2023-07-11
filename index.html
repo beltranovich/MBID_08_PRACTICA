@@ -1,9 +1,8 @@
 <div id="app"></div>
-<div id="app"></div>
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Menú de Navegación</title>
+  <title>MBID-08 Practica Final</title>
   <style>
     /* Estilos para el menú de navegación */
     ul {
@@ -54,51 +53,47 @@
   </script>
 </head>
 <body>
-  <!-- Menú de navegación -->
+  <!--------- Menú de navegación --------->
   <ul>
-    <li><a href="#" onclick="showContent('content1')">Inicio</a></li>
-    <li><a href="#" onclick="showContent('content2')">Contexto del Problema</a></li>
-    <li><a href="#" onclick="showContent('content3')">Visualizaciones</a></li>
+    <li><a href="#" onclick="showContent('content1')" title="Pagina de Inicio con la entrega de la practica">Inicio</a></li>
+    <li><a href="#" onclick="showContent('content2')" title="Para entender el problema abordado en la practica">Contexto del Problema</a></li>
+    <li><a href="#" onclick="showContent('content3')" title="Para observar el análisis EDA y las visualizaciones construidas ">Análisis EDA</a></li>
     <li><a href="#" onclick="showContent('content4')" title="Para abrir el notebook desde Google Colab">Acceso al Notebook</a></li>
   </ul>
 
-  <!-- Contenido de la página -->
+  <!--------- Contenido de la página 1 --------->
   <div id="content1" class="content">
     <h2>Página 1</h2>
     <p>Este es el contenido de la página 1.</p>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/f8/Logo_VIU.png" alt="Descripción de la imagen">
   </div>
-
+  <!--------- Contenido de la página 2 --------->
   <div id="content2" class="content">
     <h2>Página 2</h2>
     <p>Este es el contenido de la página 2.</p>
   </div>
-
+  <!--------- Contenido de la página 3 --------->
   <div id="content3" class="content">
-    <h2>Página 3</h2>
-    <p>Este es el contenido de la página 3.</p>
+    <h2>Análisis EDA</h2>
+    <p>El análisis exploratorio de datos (EDA, por sus siglas en inglés) es una etapa fundamental en cualquier proyecto de análisis de datos. Consiste en explorar y comprender los datos disponibles antes de aplicar cualquier modelo o realizar inferencias. El objetivo principal del EDA es descubrir patrones, tendencias, relaciones y características destacadas de los datos.</p>
+    
+    <p>Se carga una tabla gráfica del archivo de Google Spreadsheet que muestra el nombre y la descripción de las columnas del dataset.</p>
+    <iframe width="875" height="737" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRucQRZ69xgd6wSm_Gv1nos82SopgaIKD7n_d1b3bbmJMg1q804-nndjOcsTQfouWDYfsZfNM7mkpeX/pubchart?oid=1498633569&amp;format=interactive"></iframe>
   </div>
 
   <div id="content4" class="content">
     <h2>Notebook Python</h2>
     <p>
-      En un notebook de Python desde Google Colab, tienes varias posibilidades para realizar análisis exploratorio de datos (EDA).
-      Algunas de las herramientas populares son:
+      En un notebook de Python desde Google Colab, tenemos varias posibilidades para realizar análisis exploratorio de datos (EDA).</br>
+      Algunas de las herramientas que usaremos en la practica son:
     </p>
-    <ul>
-      <li>Librerías de visualización como Matplotlib, Seaborn y Plotly para crear gráficas y visualizaciones interactivas.</li>
-      <li>Pandas para realizar manipulación y análisis de datos, como filtrar, agrupar y calcular estadísticas descriptivas.</li>
-      <li>Numpy para operaciones numéricas y manipulación de matrices.</li>
-      <li>Scikit-learn para implementar algoritmos de aprendizaje automático y realizar tareas como clasificación y regresión.</li>
-    </ul>
+      <b>- Librerías de Visualización:</b> Matplotlib, Seaborn y Plotly para crear gráficas y visualizaciones interactivas.</br>
+      <b>- Librerías para Análisis de Datos:</b> Pandas y NumPy para realizar manipulación y análisis de datos, como filtrar, agrupar, calcular estadísticas descriptivas y hacer operaciones con matrices.</br>
+      <b>- Librerias de Graficos Georeferenciados:</b> Folium te permite crear mapas interactivos utilizando datos geoespaciales.</br>
     <p>
       Con estas herramientas, puedes cargar y explorar tus datos, visualizar patrones, identificar relaciones, realizar análisis estadísticos
       y crear modelos predictivos. El notebook de Python en Google Colab proporciona un entorno interactivo y colaborativo que te permite
       escribir y ejecutar código en bloques, agregar explicaciones y visualizaciones, y compartir tus análisis con otros.
-    </p>
-    <p>
-      ¡Explora y experimenta con las diversas funcionalidades que ofrece un notebook Python en Google Colab para realizar un EDA efectivo y
-      obtener información valiosa de tus datos!
     </p>
     <a href="https://colab.research.google.com/drive/1hOH71Zri2FwGiTpj3Ng077JcFY___xQo?hl=es" target="_blank">
       <button>Abrir Notebook en Google Colab</button>
